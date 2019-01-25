@@ -1,0 +1,37 @@
+{
+    "name": "csrui/laravel-firebase-auth",
+    "description": "Secure your laravel API with Google Firebase Auth",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rui Sardinha",
+            "email": "mail@ruisardinha.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "kreait/firebase-tokens": "^1.7",
+        "illuminate/support": "^5.7"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "csrui\\LaravelFirebaseAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "csrui\\LaravelFirebaseAuth\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "csrui\\LaravelFirebaseAuth\\ServiceProvider"
+            ]
+        }
+    }
+}
