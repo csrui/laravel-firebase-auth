@@ -1,5 +1,7 @@
 <?php
 
 return [
-    'FIREBASE_PRODJECT_ID' => env('FIREBASE_PRODJECT_ID'),
+    'firebase' => [
+        'project_id' => env('FIREBASE_PROJECT_ID'),
+    ]
 ];
